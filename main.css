@@ -1,6 +1,6 @@
 .navbar-default {
     font-family: Georgia, serif;
-    background-color: transparent;
+    background-color: white;
 }
 
 .navbar-brand {
@@ -11,7 +11,44 @@
     padding: 10px;
     font-size:1.5rem; }
 
-.carousel {
-    font-family: Georgia, san-serif;
-    text-align: center;
-    color: black;
+.slide1, .slide2, .slide3 {
+	min-height: 360px;
+	background-size: cover;
+	background-position: center center;
+}
+.slide1 {
+	background-image: url(https://www.beautypassbb.com/assets/salon_delouie.jpg);
+}
+.slide2 {
+	background-image: url(http://www.pureposhsalon.com/wp-content/uploads/2013/01/appointment_salon-photos-by-stephanie-050.jpg);
+}
+.slide3 {
+	background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDdci3xw9DEAoP_Ck-H12mSno4AILlpLNIIs3x1V8eHkpUX26c);
+}
+
+.carousel-overlay {
+	position: absolute;
+	top: 225px;
+	right: 0;
+	left: 0;
+	color: white;
+	font-family: Georgia, san-serif;
+}
+
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 1s linear;
+	-moz-transition: opacity 1s linear;
+	-ms-transition: opacity 1s linear;
+	-o-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+	opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+	opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
