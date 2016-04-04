@@ -1,9 +1,17 @@
-body {
-  font-style: italic;
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
+.navbar-default {
+    font-family: Georgia, serif;
+    background-color: transparent;
 }
 
-header {
-  display: inline-flex;
+.navbar-brand {
+    font-size: 3rem;
+    padding: 10px;
 }
+.navbar {
+    padding: 10px;
+    font-size:1.5rem; }
+
+.carousel {
+    font-family: Georgia, san-serif;
+    text-align: center;
+    color: black;
