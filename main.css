@@ -17,7 +17,7 @@
 	background-position: center center;
 }
 .jumbotron {
-	background-image: url(https://www.beautypassbb.com/assets/salon_delouie.jpg);
+	background-image: src("salon.jpeg");
 }
 
 .carousel-overlay {
