@@ -15,9 +15,7 @@
 	min-height: 360px;
 	background-size: cover;
 	background-position: center center;
-}
-.jumbotron {
-	background-image: src("salon.jpeg");
+	background-image: url("salon.jpeg");
 }
 
 .carousel-overlay {
