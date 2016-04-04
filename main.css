@@ -10,20 +10,3 @@
 .navbar {
     padding: 10px;
     font-size:1.5rem; }
-
-.jumbotron {
-	min-height: 450px;
-  background-image: url(/Salon.jpeg);
-	background-size: cover;
-	background-position: center center;
-  top: 225px;
-  right: 0;
-  left: 0;
-  color: white;
-  font-family: Georgia, san-serif;
-}
-
-.jumbo-container {
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
