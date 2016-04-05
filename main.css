@@ -1,20 +1,21 @@
-.body {	color: black; }
+.body {	color: white; }
 
 .navbar-default {
     font-family: Georgia, serif;
-    background-color: black;
+    background-color: white;
 }
 
 .navbar-brand {
     font-size: 3rem;
-    padding: 10px;
 	color: white;
 }
 .navbar {
     padding: 10px;
     font-size:1.5rem; }
 	
-.carousel {	background-color: black;	}
+.carousel {	background-color: white;	}
+
+.carousel-indicators { padding: 10px; }
 
 .slide1, .slide2, .slide3
 { 	min-height: 450px; 
