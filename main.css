@@ -1,22 +1,27 @@
+.body {	color: black; }
+
 .navbar-default {
     font-family: Georgia, serif;
-    background-color: white;
+    background-color: black;
 }
 
 .navbar-brand {
     font-size: 3rem;
     padding: 10px;
+	color: white;
 }
 .navbar {
     padding: 10px;
     font-size:1.5rem; }
 	
-.carousel {	background-color: white;	}
+.carousel {	background-color: black;	}
 
-.slide1 { min-height: 450px; 
- 		 background-image: url(Salon.jpeg);
-		 width: auto;
-		 height: auto;
-		 background-size: cover;
-		 background-position: center center;
+.slide1, .slide2, .slide3
+{ 	min-height: 450px; 
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background-position: center center;
     }
+
+.slide1 { background-image: url(Salon.jpeg); }
