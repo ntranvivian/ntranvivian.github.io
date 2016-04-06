@@ -1,17 +1,33 @@
-.body {	color: white; }
+.body {	position: relative;
+		padding-top: 70px;}
 
+.container .navbar{
+	color: black;}
+	
 .navbar-default {
     font-family: Georgia, serif;
-    background-color: white;
+	border-color: gray;
+	background-color: white;
 }
 
-.navbar-brand {
-    font-size: 3rem;
-	color: white;
+a{
+	color:grey;
 }
+
+.navbar-default .navbar-brand {
+  color: gray;
+  font-size: 4.5rem;
+}
+
 .navbar {
     padding: 10px;
-    font-size:1.5rem; }
+	font-size: 2rem; 
+}
+
 	
-.carousel-indicators { padding: 10px; }
+.carousel {
+	margin: auto;
+	overflow:hidden;
+	padding: 10px;
+}
 
