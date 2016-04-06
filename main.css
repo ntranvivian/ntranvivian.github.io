@@ -1,7 +1,4 @@
 .body {	}
-
-.container .navbar{
-	color: black;}
 	
 .navbar-default {
     font-family: Georgia, serif;
@@ -12,7 +9,7 @@
 }
 
 a:link {
-	color: green;
+	color: grey;
 }
 
 .navbar-default .navbar-brand {
