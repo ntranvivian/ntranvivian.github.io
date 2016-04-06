@@ -1,4 +1,4 @@
-.body {	}
+.body {	position: relative; }
 	
 .navbar-default {
     font-family: Georgia, serif;
@@ -24,6 +24,5 @@ a {
 	overflow:hidden;
 }
 
-.carousel .item {
-}
+p { font-size: 50px;}
 
