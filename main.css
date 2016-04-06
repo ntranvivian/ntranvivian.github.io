@@ -1,17 +1,22 @@
-.body {	color: white; }
+.body {	}
 
 .navbar-default {
     font-family: Georgia, serif;
-    background-color: white;
+	border-color: gray;
+	background-color: white;
 }
 
-.navbar-brand {
-    font-size: 3rem;
-	color: white;
+.navbar-default .navbar-brand {
+  color: black;
+  font-size: 4.5rem;
 }
+
 .navbar {
-    padding: 10px;
-    font-size:1.5rem; }
+    padding: 5px;
+    font-size: 1.5rem; 
+	position: fixed;
+    top: 0px;
+    width: 100%;}
 	
 .carousel {
 	margin: auto;
