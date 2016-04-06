@@ -1,12 +1,17 @@
-.body {	position: relative; }
+.body {	position: relative;
+		padding-top: 70px;}
+
+.container .navbar{
+	color: black;}
 	
 .navbar-default {
     font-family: Georgia, serif;
+	border-color: gray;
 	background-color: white;
 }
 
-a {
-	color: grey;
+a{
+	color:grey;
 }
 
 .navbar-default .navbar-brand {
@@ -18,11 +23,11 @@ a {
     padding: 10px;
 	font-size: 2rem; 
 }
+
 	
 .carousel {
 	margin: auto;
 	overflow:hidden;
+	padding: 10px;
 }
-
-p { font-size: 50px;}
 
