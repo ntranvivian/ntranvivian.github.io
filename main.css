@@ -1,22 +1,30 @@
 .body {	}
 
+.container .navbar{
+	color: black;}
+	
 .navbar-default {
     font-family: Georgia, serif;
+	border-bottom-width: 1.5px;
+	border-style: solid;
 	border-color: gray;
 	background-color: white;
 }
 
+a:link {
+	color: gray;
+}
+
 .navbar-default .navbar-brand {
-  color: black;
+  color: gray;
   font-size: 4.5rem;
 }
 
 .navbar {
-    padding: 8px;
-    font-size: 1.5rem; 
-	position: fixed;
-    top: 0px;
-    width: 100%;}
+    padding: 10px;
+	font-size: 2rem; 
+}
+
 	
 .carousel {
 	top: 50px;
