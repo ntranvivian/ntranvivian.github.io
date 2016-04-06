@@ -13,16 +13,12 @@
     padding: 10px;
     font-size:1.5rem; }
 	
-.carousel {	background-color: white;	}
+.carousel {
+	margin: auto;
+}
 
-.carousel-indicators { padding: 10px; }
-
-.carousel-control {}
-
-.carousel-inner
-{ 	min-height: 450px; 
-	width: auto;
+.carousel .item {
+	width: 100%
 	height: auto;
-	background-size: cover;
-	background-position: center center;
-    }
+}
+
