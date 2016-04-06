@@ -10,13 +10,19 @@
 	background-color: white;
 }
 
+.nav li a:hover{
+    color: black !important;
+}
+
 a{
 	color:grey;
 }
 
 .navbar-default .navbar-brand {
-  color: gray;
-  font-size: 4.5rem;
+	font-family: "master_of_break";
+	src: url('master_of_break.ttf'),
+	url('master_of_break.eot'); /* IE */
+	font-size: 4rem;
 }
 
 .navbar {
