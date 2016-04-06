@@ -17,18 +17,12 @@
 
 .carousel-indicators { padding: 10px; }
 
-.carousel-control { padding 100px; }
+.carousel-control {}
 
-.slide1, .slide2, .slide3
+.carousel-inner
 { 	min-height: 450px; 
 	width: auto;
 	height: auto;
 	background-size: cover;
 	background-position: center center;
     }
-
-.slide1 { background-image: url(Salon.jpeg); }
-
-.slide2 { background-image: url(Salon1.jpeg); }
-
-.slide3 { background-image: url(Salon2.jpeg); }
