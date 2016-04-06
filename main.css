@@ -19,8 +19,10 @@ a{
 }
 
 .navbar-default .navbar-brand {
-  color: gray;
-  font-size: 4rem;
+	font-family: "master_of_break";
+	src: url('master_of_break.ttf'),
+	url('master_of_break.eot'); /* IE */
+	font-size: 4rem;
 }
 
 .navbar {
