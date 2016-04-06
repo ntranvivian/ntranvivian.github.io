@@ -2,13 +2,10 @@
 	
 .navbar-default {
     font-family: Georgia, serif;
-	border-bottom-width: 1.5px;
-	border-style: solid;
-	border-color: gray;
 	background-color: white;
 }
 
-a:link {
+a {
 	color: grey;
 }
 
@@ -21,7 +18,6 @@ a:link {
     padding: 10px;
 	font-size: 2rem; 
 }
-
 	
 .carousel {
 	margin: auto;
