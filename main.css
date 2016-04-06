@@ -15,10 +15,11 @@
 	
 .carousel {
 	margin: auto;
+	overflow:hidden;
 }
 
 .carousel .item {
-	width: 100%
+	width: 100%;
 	height: auto;
 }
 
