@@ -4,11 +4,12 @@
   <title>New Image Salon &amp; Spa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <link href="main.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
+  <style type="text/css">
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
 	  	max-width: none;
@@ -16,22 +17,37 @@
 		height: 480px;
 		overflow:hidden; 
   }
+  body {
+      position: relative; 
+	  padding-top: 50px;
+  }
+  #section1 {padding-top:50px;height:500px;}
+  #section2 {padding-top:50px;height:500px;}
+  #section3 {padding-top:50px;height:500px;}
+  #section4 {padding-top:50px;height:500px;}
   </style>
 </head>
 
-<body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+<nav id="#myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
       <div class="navbar-header">
+      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+        </button>
           <a class="navbar-brand" href="#"><span class="icon"></span> New Image Salon &amp; Spa</a>
       </div>
-      <div></div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="section1">About Us</a></li>
+          <li><a href="section1">About Us</a></li>
           <li><a href="section2">Services</a></li>
           <li><a href="section3">Stylists</a></li>
           <li><a href="section4">Locations</a></li>
       </ul>
+      </div>
     </div>
 </nav>
 
@@ -71,22 +87,28 @@
   
   </div>
 
-<div id="section1" class="container-fluid">
+<div class="container">
+<div id="section1">
 <h1>Testing for Section 1</h1>
 <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-
-<div id="section2" class="container-fluid">
+  </div>
+<hr>
+<div id="section2">
 <h1>Testing for Section 2</h1>
 </div>
-
-<div id="section3" class="container-fluid">
+<hr>
+<div id="section3">
 <h1>Testing for Section 3</h1>
 </div>
-
-<div id="section4" class="container-fluid">
+<hr>
+<div id="section4">
 <h1>Testing for Section 4</h1>
+</div>
+<hr>
 </div>
 </body>
 </html>
+
+</body>
+</html>                                		
