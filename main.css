@@ -4,7 +4,11 @@
 		padding-top: 70px;}
 
 .container .navbar{}
-	
+
+a {
+    color: purple;
+}
+
 .navbar-default {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border-color: gray;
@@ -15,19 +19,15 @@
     color: black !important;
 }
 
-a {
-	color: black;
-}
-
 .navbar-default .navbar-brand {
 	font-family: 'master2'; 
 	font-size: 4rem;
-	color: black;
+	color:black;
 }
 
 .navbar {
     padding: 10px;
-	font-size: 2rem; 
+	font-size: 2rem;
 }
 
 .carousel {
