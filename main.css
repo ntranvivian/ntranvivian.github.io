@@ -6,7 +6,7 @@
 .container .navbar{}
 
 a {
-    color: purple;
+    color: black !important;
 }
 
 .navbar-default {
