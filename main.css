@@ -11,6 +11,7 @@
 
 .navbar-default {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+	border-color: gray;
 	background-color: white;
 }
 
