@@ -1,3 +1,5 @@
+@font-face { font-family: master2; src: url('GreatVibes-Regular.otf'); } 
+
 .body {	position: relative;
 		padding-top: 70px;}
 
@@ -5,7 +7,7 @@
 	color: black;}
 	
 .navbar-default {
-    font-family: Georgia, serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border-color: gray;
 	background-color: white;
 }
@@ -19,10 +21,9 @@ a{
 }
 
 .navbar-default .navbar-brand {
-	font-family: "master_of_break";
-	src: url('master_of_break.ttf'),
-	url('master_of_break.eot'); /* IE */
+	font-family: 'master2'; 
 	font-size: 4rem;
+	color: black;
 }
 
 .navbar {
@@ -30,7 +31,6 @@ a{
 	font-size: 2rem; 
 }
 
-	
 .carousel {
 	margin: auto;
 	overflow:hidden;
