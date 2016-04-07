@@ -3,8 +3,7 @@
 .body {	position: relative;
 		padding-top: 70px;}
 
-.container .navbar{
-	color: black;}
+.container .navbar{}
 	
 .navbar-default {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -16,8 +15,8 @@
     color: black !important;
 }
 
-a{
-	color:grey;
+a {
+	color: black;
 }
 
 .navbar-default .navbar-brand {
