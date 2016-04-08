@@ -41,3 +41,6 @@
 width: 100%; height: 480px; 
 background-position:center center;
 background-size: cover;}
+
+ul.womens-hair dt div.title { float: left }
+ul.womens-hair dt div.content {float: right }
