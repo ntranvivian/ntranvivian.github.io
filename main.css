@@ -42,5 +42,12 @@ width: 100%; height: 480px;
 background-position:center center;
 background-size: cover;}
 
+.gmap{
+		max-width:none!important;
+		background:none!important;
+		border:thick;
+		border-color: black;
+		}
+
 ul.womens-hair dt div.title { float: left }
 ul.womens-hair dt div.content {float: right }
