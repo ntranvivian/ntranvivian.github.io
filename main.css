@@ -1,5 +1,6 @@
 @font-face { font-family: GV; src: url('GreatVibes-Regular.otf'); } 
 @font-face { font-family: CL; src: url('CL.ttf'); } 
+@font-face { font-family: ostrich; src: url('ostrich.ttf'); } 
 
 .body {	position: relative;
 		padding-top: 50px;}
@@ -68,11 +69,13 @@ dd {
   min-height: 20px;
 }
 
-h2,h1,h3,h4 { min-height:32px;
+h1,h2 { font-family: "ostrich";
+		min-height:32px;}
+
+h3,h4 { min-height:32px;
 	 font-family:cambria}
 	 
 .icons li a {font-size:2.5rem;}
-
 
 .contact .fa {font-size:2.5rem;
 			  min-height: 25px;
