@@ -1,35 +1,47 @@
-@font-face { font-family: master2; src: url('GreatVibes-Regular.otf'); } 
+@font-face { font-family: GV; src: url('GreatVibes-Regular.otf'); } 
+@font-face { font-family: CL; src: url('CL.ttf'); } 
 
 .body {	position: relative;
 		padding-top: 50px;}
 
-.container .navbar{}
+ul.nav li a:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+	border-style: none;
+}
 
 .navbar a {color: black !important;}
 
 .nav li a:hover{
     color: black !important;}
 
+.nav li a:hover{
+    color: orange !important;
+    background: none;
+}
+.nav li.active a{
+    color: black;
+    text-decoration: underline;
+	background:none !important;
+}
+
 .navbar-default {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "CL";
 	border-color: gray;
 	background-color: white;}
 
 .navbar-default .navbar-brand {
-	font-family: 'master2'; 
+	font-family: "GV"; 
 	font-size: 3rem;}
 
 .navbar li a:hover {
-	color:  !important;
+	color: black !important;
 	background-color: transparent !important;
 	text-decoration: underline; }
 
-
 .navbar {
     padding: 10px;
-	font-size: 1.5rem;
-	
-}
+	font-size: 1.6rem;}
 
 .carousel {
 	margin: auto;
@@ -42,8 +54,15 @@ background-position:center center;
 background-size: cover;}
 
 .container-fluid .gmaps {
-		max-width:none!important;
+		max-width:auto!important;
 		background:none!important;
-		float:right;
-		}
+		float:right;	}
+		
+.text { font-size:36px;}
 
+.iconblack {color:black;}
+
+dd {
+  padding-left: 25px;
+  min-height: 20px;
+}
