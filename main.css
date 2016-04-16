@@ -5,49 +5,45 @@
 
 .container .navbar{}
 
-.navbar a {
-    color: black !important;
-}
+.navbar a {color: black !important;}
+
+.nav li a:hover{
+    color: black !important;}
 
 .navbar-default {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border-color: gray;
-	background-color: white;
-}
-
-.nav li a:hover{
-    color: black !important;
-}
+	background-color: white;}
 
 .navbar-default .navbar-brand {
 	font-family: 'master2'; 
-	font-size: 4rem;
-	color:black;
-}
+	font-size: 3rem;}
+
+.navbar li a:hover {
+	color:  !important;
+	background-color: transparent !important;
+	text-decoration: underline; }
+
 
 .navbar {
     padding: 10px;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	
 }
 
 .carousel {
 	margin: auto;
 	overflow:hidden;
-	padding: 0px;
-}
+	padding: 0px;}
 
 .carousel-inner { 
 width: 100%; height: 480px; 
 background-position:center center;
 background-size: cover;}
 
-.gmap{
+.container-fluid .gmaps {
 		max-width:none!important;
 		background:none!important;
-		border:thick;
-		border-color: black;
+		float:right;
 		}
 
-ul.womens-hair dt div.title { float: left }
-ul.womens-hair dt div.content {float: right }
