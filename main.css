@@ -68,7 +68,12 @@ dd {
   min-height: 20px;
 }
 
-h2,h1,h3 { min-height:32px;
+h2,h1,h3,h4 { min-height:32px;
 	 font-family:cambria}
 	 
-.text a {font-size:2rem;
+.icons li a {font-size:2.5rem;}
+
+
+.contact .fa {font-size:2.5rem;
+			  min-height: 25px;
+}
