@@ -1,44 +1,46 @@
-@font-face { font-family: GV; src: url('GreatVibes-Regular.otf'); } 
-@font-face { font-family: CL; src: url('CL.ttf'); } 
-@font-face { font-family: playfair; src: url('Playfair.ttf'); } 
+@font-face { font-family: paris; src: url('paris.ttf'); } 
+@font-face { font-family: droid; src: url('droid.ttf'); } 
+@font-face { font-family: raleway; src: url('raleway.ttf'); } 
 
 .body {	position: relative;}
 
+h1 { font-family: "droid";
+	 font-size: 30px;}
+
+h2 { font-family: "raleway";
+	 font-size: 26px;
+		min-height:32px;}
+		
 ul.nav li a:hover {
-	background-color: #000000;
-	color: #FFFFFF;
-	border-style: none;}
-
-.navbar a {color: black !important;}
-
-.nav li a:hover{
-    color: black !important;}
-
-.nav li a:hover{
-    color: orange !important;
+	color: gray !important;
     background: none;
-}
+	border-style: none;
+	}
+
+.navbar-trans a {color: black !important;}
+
 .nav li.active a{
     color: black;
     text-decoration: underline;
 	background:none !important;
+	border:none;
 }
 
-.navbar-default {
-    font-family: "CL";
+.navbar-trans {
+    font-family: "raleway";
 	border-color: gray;
-	background-color: white;}
+	background-color: #FAFAFA;}
 
-.navbar-default .navbar-brand {
-	font-family: "GV"; 
-	font-size: 3rem;}
+.navbar-trans .navbar-brand {
+	font-family: "paris"; 
+	font-size: 3.5rem;}
 
-.navbar li a:hover {
+.navbar-trans li a:hover {
 	color: black !important;
 	background-color: transparent !important;
 	text-decoration: underline; }
 
-.navbar {
+.navbar-trans {
     padding: 10px;
 	font-size: 1.6rem;}
 
@@ -57,10 +59,8 @@ background-size: cover;}
 		background:none!important;
 		float:right;	}
 
-section2
-
-dt,dd {font-family: "CL";
-		font-size: 1.5rem;}
+dt, dd {font-family: "raleway";
+		font-size: 1.75rem;}
 
 .iconblack {color:black;}
 
@@ -69,11 +69,7 @@ dd {
   min-height: 20px;
 }
 
-h1 { font-family: "playfair";
-		min-height:32px;}
 
-h2 { font-family: "cl";
-		min-height:32px;}
 
 h3,h4{ min-height:32px;
 	 font-family:cambria}
@@ -81,3 +77,7 @@ h3,h4{ min-height:32px;
 .icons li a {font-size:2.5rem;}
 
 .contact .fa {font-size:2.5rem;}
+
+.col-sm-6 h3 {font-family: "raleway"}
+
+.col-sm-6 h4 {font-family: "droid"}
