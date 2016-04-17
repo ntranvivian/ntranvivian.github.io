@@ -2,15 +2,12 @@
 @font-face { font-family: CL; src: url('CL.ttf'); } 
 @font-face { font-family: playfair; src: url('Playfair.ttf'); } 
 
-.body {	position: relative;
-		padding-top: 50px;}
+.body {	position: relative;}
 
 ul.nav li a:hover {
 	background-color: #000000;
 	color: #FFFFFF;
-	border-style: none;
-}
-
+	border-style: none;}
 
 .navbar a {color: black !important;}
 
