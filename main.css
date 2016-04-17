@@ -11,6 +11,7 @@ ul.nav li a:hover {
 	border-style: none;
 }
 
+
 .navbar a {color: black !important;}
 
 .nav li a:hover{
@@ -59,6 +60,8 @@ background-size: cover;}
 		background:none!important;
 		float:right;	}
 
+section2
+
 dt,dd {font-family: "CL";
 		font-size: 1.5rem;}
 
@@ -75,11 +78,9 @@ h1 { font-family: "playfair";
 h2 { font-family: "cl";
 		min-height:32px;}
 
-h3,h4 { min-height:32px;
+h3,h4{ min-height:32px;
 	 font-family:cambria}
 	 
 .icons li a {font-size:2.5rem;}
 
-.contact .fa {font-size:2.5rem;
-			  min-height: 25px;
-}
+.contact .fa {font-size:2.5rem;}
