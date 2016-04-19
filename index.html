@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+		target: 'instafeed',
+        tagName: 'awesome',
+        clientId: '2aad3f4418f646b29304a56dedf464c0'
+		useHttp: true
+    });
+    feed.run();
+	</script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="75">
@@ -213,6 +224,9 @@
         
 <div id="section3" class="container">
 <h1 class="text-left">Testing for Section 3</h1>
+<div id="insta-wrap">
+<div id="instafeed"></div>
+</div>
 </div>
 
 <div id="section4" class="container">
