@@ -19,6 +19,8 @@ ul.nav li a:hover {
 
 .navbar-trans a {color: black !important;}
 
+.navbar-toggle .icon-bar {border:1px solid black; }
+
 .nav li.active a{
     color: black;
     text-decoration: underline;
@@ -29,7 +31,8 @@ ul.nav li a:hover {
 .navbar-trans {
     font-family: "raleway";
 	border-color: gray;
-	background-color: #FAFAFA;}
+	background-color: #FAFAFA;
+	vertical-align:center;}
 
 .navbar-trans .navbar-brand {
 	font-family: "paris"; 
@@ -38,25 +41,19 @@ ul.nav li a:hover {
 
 .navbar-trans li a:hover {
 	color: black !important;
-	background-color: transparent !important;
+	background-color: none !important;
 	text-decoration: underline; }
 
 .navbar-trans {
-    padding: 10px;
+    padding: 2.5px;
 	font-size: 1.6rem;}
-
-.carousel {
-	margin: auto;
-	overflow:hidden;
-	height:525px;
-	}
-
-.carousel-inner { height: 525px; }
+	
+.carousel {height:525px;
+			height:100%;}
 
 .carousel .item {top: -25%;}
 
-.gmaps {
-		max-width:auto!important;
+.gmaps {max-width:auto!important;
 		background:none!important;
 		float:right;	}
 
@@ -115,4 +112,14 @@ h3,h4{ min-height:32px;
 
 #instafeed a:hover .likes {
   opacity:1;
+}
+
+@media (max-width:767px) { 
+    .navbar .navbar-brand {
+        font-size:2.20rem;
+        padding: 15px 0 15px 15px;
+    }
+	.navbar-trans {
+	font-size: 1.10rem;
+	}
 }
