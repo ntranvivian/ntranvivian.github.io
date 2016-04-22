@@ -10,38 +10,36 @@
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/instafeed.min.js"></script>
+  <script type="text/javascript" src="instafeed.min.js"></script> 
   <script type="text/javascript">
     var feed = new Instafeed({
-        get: 'tagged',
-		target: 'instafeed',
-        tagName: 'awesome',
-        clientId: '2aad3f4418f646b29304a56dedf464c0'
-		useHttp: true
+		limit: 18,
+        get: 'user',
+        userId: '3159402963',
+        clientId: '1578947.467ede5.b51861ad10964b56990b4e1638990585',
+		accessToken: '3159402963.467ede5.c3239c49c423425eb6fb079bda3de427'
     });
     feed.run();
-	</script>
+</script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="75">
-<nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
-  <div class="container">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-trans navbar-fixed-top">
+  <div class="container-fluid">
       <div class="navbar-header">
       	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-           			<span class="sr-only">Toggle navigation</span> 
+            <span class="sr-only">Toggle navigation</span> 
                     <span class="icon-bar"></span> 
                     <span class="icon-bar"></span> 
                     <span class="icon-bar"></span> 
         </button>
-        <div class="col-sm-8 col-lg-12">
           <a class="navbar-brand" href="#"> New Image Salon &amp; Spa</a>
-        </div>
       </div>
-      <div class="navbar-collapse collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav nav-pills navbar-right">
           <li class="current"><a href="#section1">About Us</a></li>
           <li><a href="#section2">Services</a></li>
-          <li><a href="#section3">Stylists</a></li>
+          <li><a href="#section3">Portfolio</a></li>
           <li><a href="#section4">Contact Us</a></li>
       </ul>
       </div>
@@ -58,10 +56,6 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
     	<img src="Salon.jpeg" alt="Salon" class="img-responsive center-block"> 
-       	<div class="carousel-caption">
-        	  <h1></h1>
-          		<h3></h3>
-      	</div>
      </div>
 
   <div class="item">
@@ -100,7 +94,7 @@
             	<div class="col-sm-8 col-xs-10">
                 	<dl class="womens-hair">
                 		<dt>Haircut</dt>
-                  		<dd><small>Includes Blowdry Service</small></dd>
+                  		<dd class="text-muted"><small>Includes Blowdry Service</small></dd>
                   		<dt>Bang Trim</dt>
                     	<dt>Event/Updo Style</dt>
                     	<dt>Color Touchup</dt>
@@ -223,7 +217,7 @@
 </div>
         
 <div id="section3" class="container">
-<h1 class="text-left">Testing for Section 3</h1>
+<h1 class="text-left">Instagram</h1>
 <div id="insta-wrap">
 <div id="instafeed"></div>
 </div>
@@ -233,7 +227,7 @@
 <h1 class="text-left">Contact Us</h1>
 <div class="col-sm-6">
     	<h3>Business Hours</h3>
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 text-center col-xs-6">
         <h4>Mon - Fri</h4>
         <h4>Sat</h4>
         <h4>Sun</h4>
@@ -246,13 +240,13 @@
         <h3 class="text-center">(510) 792-7400</h3>
       <ul class="list-inline icons text-center">
 		<li><a href="http://facebook.com/"><i class="fa fa-facebook-square iconblack" aria-hidden="true"></i></a></li>
-		<li><a href="http://linkedin.com/"><i class="fa fa-instagram iconblack" aria-hidden="true"></i></a></li>
+		<li><a href="https://www.instagram.com/newimagesalonandspa/"><i class="fa fa-instagram iconblack" aria-hidden="true"></i></a></li>
 		<li><a href="http://www.yelp.com/biz/new-image-salon-and-spa-fremont-2"><i class="fa fa-yelp iconblack" aria-hidden="true"></i></a></li>
 	</ul>
     </div>
 <div class="col-sm-6 text-right">
-    <div class="gmaps">
-		<iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0W_z4Kl-v4q2XFknvM_P61oO5ZK3cXNE
+    <div class="gmaps img-responsive">
+		<iframe width="500" height="300" frameborder="0" style="border:50" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0W_z4Kl-v4q2XFknvM_P61oO5ZK3cXNE
     &q=New+Image+Salon+Spa,Fremont+CA" allowfullscreen>
 		</iframe>
 	</div>
