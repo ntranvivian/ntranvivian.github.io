@@ -12,12 +12,14 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="instafeed.min.js"></script> 
   <script type="text/javascript">
+    var isStandardWindow = window.matchMedia("(min-width: 640px)").matches;
     var feed = new Instafeed({
-		limit: 18,
+		limit: isStandardWindow ? 18 : 6,
         get: 'user',
         userId: '3159402963',
         clientId: '1578947.467ede5.b51861ad10964b56990b4e1638990585',
-		accessToken: '3159402963.467ede5.c3239c49c423425eb6fb079bda3de427'
+		accessToken: '3159402963.467ede5.c3239c49c423425eb6fb079bda3de427',
+		template: isStandardWindow ? '<a href="{{link}}" target="_blank"><img src="{{image}}" width="150" height="150"><div class="likes">&hearts; {{likes}}</div></a>' : '<a href="{{link}}" target="_blank"><img src="{{image}}" width="120" height="120"><div class="likes">&hearts; {{likes}}</div></a>'
     });
     feed.run();
 </script>
@@ -51,19 +53,24 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-    	<img src="Salon.jpeg" alt="Salon" class="img-responsive center-block"> 
+    	<img src="WSalon.jpg" alt="Salon" class="img-responsive"> 
      </div>
 
   <div class="item">
-    <img src="Salon1.jpeg" alt="Salon1" class="img-responsive center-block"> 
+    <img src="WSalon1.jpg" alt="Salon1" class="img-responsive"> 
   </div>
 
   <div class="item">
-    <img src="Salon2.jpeg" alt="Salon2" class="img-responsive center-block"> 
+    <img src="WSalon2.jpg" alt="Salon2" class="img-responsive"> 
+  </div>
+  
+  <div class="item">
+    <img src="WSalon3.jpg" alt="Salon3" class="img-responsive"> 
   </div>
  </div> 
  
@@ -71,7 +78,8 @@
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -79,8 +87,8 @@
             
 <div id="section1" class="container">
 	<h1 class="text-left">About Us</h1>
-    <div class="col-sm-6">
-    <h3>We do hair.</h3>
+    <div class="col-sm-12 aboutus">
+    <h3>New Image Salon and Spa is one of the most stylish and prestigious hair salons in the East Bay. Keeping up-to-date with the ever changing world of beauty products, coloring techniques, and services from around the world, our team of professional stylists have helped bring beauty and glamour to hundreds of satisfied clients.</h3>
     </div>
 </div>
 
@@ -91,124 +99,88 @@
         <div class="row">
         	<div class="col-sm-4">
             <h2 class="text-center">Women's Services</h2>
-            	<div class="col-sm-8 col-xs-10">
                 	<dl class="womens-hair">
+                   			<dt class="price">50</dt>
                 		<dt>Haircut</dt>
-                  		<dd class="text-muted"><small>Includes Blowdry Service</small></dd>
-                  		<dt>Bang Trim</dt>
-                    	<dt>Event/Updo Style</dt>
+                        	<dt class="price">65</dt>
                     	<dt>Color Touchup</dt>
+                        	<dt class="price">90+</dt>
                     	<dt>One Processing Color</dt>
+                        	<dt class="price">100+</dt>
                     	<dt>Highlight</dt>
+                        	<dt class="price">45-65</dt>
                     	<dt>Deep Conditioning Treatment</dt>
+                        	<dt class="price">?</dt>
+                        <dt>Oil Treatment</dt>
+                        	<dt class="price">250+</dt>
+                        <dt>Keratin Treatment</dt>
+                        	<dt class="price">300+</dt>
+                        <dt>Permanent Straighting</dt>
+                        	<dt class="price">50+</dt>
+                        <dt>Event/Updo Style</dt>
                  	</dl>
                 </div>
-                <div class="col-sm-4 text-right price">
-                	<dt class="price">
-                		<dt>50</dt>
-                        <dd> </dd>
-                  		<dt>10</dt>
-                    	<dt>50+</dt>
-                    	<dt>65</dt>
-                    	<dt>90+</dt>
-                    	<dt>100+</dt>
-                    	<dt>45-65</dt>
-                 	</dt>
-                </div>
-            </div>
             <div class="col-sm-4">
             	<h2 class="text-center">Men's Services</h2>
-                <div class="col-sm-8 col-xs-10">
+                <div class="col-sm-12">
+                	<dt class="price">30</dt>
                 	<dt>Haircut</dt>
+                    	<dt class="price">50</dt>
                     <dt>Color</dt>
-                    <dt>Scalp Treatment</dt>
-                </div>
-                <div class="col-sm-4 text-right price">
-                	<dt>30</dt>
-                    <dt>50</dt>
-                    <dt>25</dt>
+                    	<dt class="price">25</dt>
+                    <dt>Oil/Scalp Treatment</dt>
                 </div>
             </div>
             <div class="col-sm-4">
             	<h2 class="text-center">Children Services</h2>
-                	<div class="col-sm-8 col-xs-10">
+                	<div class="col-sm-12">
+                    	<dt class="price">20+</dt>
                     	<dt>Haircut</dt>
                     </div>
-                    <div class="col-sm-4 text-right price">
-                  		<dt>20+</dt>
-                    </div>
-            </div>     
+            </div>
+        </div>
+        </div>   
 		</div>
         <div class="row">
           <div class="col-sm-4">
-            	<h2 class="text-center">Spa Services</h2>
-                <div class="col-sm-8 col-xs-10">
-               		<dt>Vita Cura 5 Phase Firming Facial</dt>
-                    <dt>Four Layer</dt>
-                    <dt>Lymphatic Cleansing Facial</dt>
-                    <dt>Acne Pore Perfecting Facial</dt>
-                    <dt>Back Treatment</dt>
-                    <dt>European Facial</dt>
-                    <dt>Hydra 4 Facial</dt>
-                </div>
-                <div class="col-sm-4 text-right price">
-                	<dt>150</dt>
-                    <dt>105</dt>
-                    <dt>95</dt>
-                    <dt>85</dt>
-                    <dt>85</dt>
-                    <dt>75</dt>
-                    <dt>75</dt>
-                </div>
-          </div>
-          <div class="col-sm-8">
-                <div class="col-sm-6">
-                <h2 class="text-center">Waxing</h2>
-                <div class="col-sm-8 col-xs-10">
+          <h2 class="text-center">Waxing/Threading</h2>
+                <div class="col-sm-12">
+                		<dt class="price">15</dt>
                		<dt>Eyebrow</dt>
-                    <dt>Eyebrow Touchup</dt>
+                    	<dt class="price">40</dt>
                     <dt>Full Face</dt>
+                    	<dt class="price">8</dt>
                     <dt>Lip</dt>
+                    	<dt class="price">10+</dt>
                     <dt>Chin</dt>
+                    	<dt class="price">35+</dt>
                     <dt>Full Arm</dt>
-                    <dt>Half Arm</dt>
-                    <dt>Underarm</dt>
-                </div>
-                <div class="col-sm-4 text-right price">
-                	<dt>20</dt>
-                    <dt>15</dt>
-                    <dt>10</dt>
-                    <dt>8</dt>
-                    <dt>10+</dt>
-                    <dt>35+</dt>
-                    <dt>25+</dt>
-                    <dt>15+</dt>
-                </div>
-                </div>
-                <div class="col-sm-6">
-                <h2 class="text-center"></h2>
-                <div class="col-sm-8 col-xs-10">
-                	<dt>Hand</dt>
+                        <dt class="price">50+</dt>
                     <dt>Full Leg</dt>
-                    <dt>Upper Leg</dt>
-                    <dt>Lower Leg</dt>
-                    <dt>Chest</dt>
-                    <dt>Back</dt>
-                    <dt>Stomach</dt>
+                    	<dt class="price">30+</dt>
                     <dt>Bikini Line</dt>
+                    	<dt class="price">50+</dt>
                     <dt>Brazilian Bikini</dt>
                 </div>
-                <div class="col-sm-4 text-right price">
-                	<dt>15+</dt>
-                    <dt>50+</dt>
-                    <dt>30+</dt>
-                    <dt>30+</dt>
-                    <dt>25+</dt>
-                    <dt>30+</dt>
-                    <dt>25+</dt>
-                    <dt>30+</dt>
-                    <dt>50+</dt>
-                </div>
+
+          </div>
+          <div class="col-sm-4">
+            	<h2 class="text-center">Spa Services</h2>
+                <div class="col-sm-12 spaservices">
+                		<dt class="price">150</dt>
+               		<dt>Vita Cura 5 Phase Firming Facial</dt>
+                    	<dt class="price">105</dt>
+                    <dt>Four Layer</dt>
+                    	<dt class="price">95</dt>
+                    <dt>Lymphatic Cleansing Facial</dt>
+                    	<dt class="price">85</dt>
+                    <dt>Acne Pore Perfecting Facial</dt>
+                    	<dt class="price">85</dt>
+                    <dt>Back Treatment</dt>
+                    	<dt class="price">75</dt>
+                    <dt>European Facial</dt>
+                    	<dt class="price">75</dt>
+                    <dt>Hydra 4 Facial</dt>
                 </div>
           </div>
      </div>
